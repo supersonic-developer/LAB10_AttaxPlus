@@ -10,10 +10,11 @@ namespace AttaxxPlus.View
         // EVIP: reusing brushes, named constants
         readonly private static SolidColorBrush yellow = new SolidColorBrush(Colors.Yellow);
         readonly private static SolidColorBrush gray = new SolidColorBrush(Colors.Gray);
+        readonly private static SolidColorBrush red = new SolidColorBrush(Colors.Red);
 
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            return ((bool)value) ? yellow : gray;
+            return ((bool)value) ? red : gray;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
